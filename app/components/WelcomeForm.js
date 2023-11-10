@@ -91,7 +91,7 @@ const WelcomeForm = ({
           <button
             type="button"
             onClick={startAssistant}
-            disabled={isButtonDisabled || !assistantName || !assistantDescription || !file}
+            disabled={isButtonDisabled}
             className={`p-2 rounded-md flex justify-center items-center ${isButtonDisabled ? 'bg-gray-500 text-gray-300' : 'bg-green-500 text-white'}`}
           >
             {isStartLoading ? <LoadingCircle /> : "Start"}
