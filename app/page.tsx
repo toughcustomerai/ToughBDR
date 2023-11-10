@@ -355,14 +355,8 @@ export default function Chat() {
         <MessageList chatMessages={chatMessages} />
       ) : (
         <WelcomeForm
-          assistantName={assistantName}
-          setAssistantName={setAssistantName}
-          assistantDescription={assistantDescription}
-          setAssistantDescription={setAssistantDescription}
           assistantModel={assistantModel}
           setAssistantModel={setAssistantModel}
-          file={file}
-          handleFileChange={handleFileChange}
           startAssistant={startAssistant}
           isButtonDisabled={isButtonDisabled}
           isStartLoading={isStartLoading}
